@@ -1,0 +1,24 @@
+{
+  "name": "ifood-support-agent",
+  "version": "0.1.0",
+  "description": "Agente de suporte a pedidos de delivery com tool calling, regras de negócio no código e avaliação medida",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "chat": "tsx --env-file=.env src/cli.ts",
+    "eval": "tsx --env-file=.env eval/run.ts"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.4.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.0"
+  }
+}
